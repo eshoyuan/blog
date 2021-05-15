@@ -5,7 +5,9 @@
 <p><img src="https://raw.githubusercontent.com/eshoyuan/pic/main/image-20210201215805063.png"></p>
 <h2 id="Smoothness-Assumption"><a href="#Smoothness-Assumption" class="headerlink" title="Smoothness Assumption"></a>Smoothness Assumption</h2><p>近朱者赤近墨者黑</p>
 <p>如下图，尽管$x_3$可能里x_2更近，但是x_1有连续的点过渡到x_2，所以x_2更可能和x_1是一类。</p>
-<p><img src="https://raw.githubusercontent.com/eshoyuan/pic/main/image-20210201215542640.png"></p>
+<div style="align: center">
+![](https://raw.githubusercontent.com/eshoyuan/pic/main/image-20210201215542640.png)
+</div>
 </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-01-24T16:00:00.000Z" title="2021/1/25上午12:00:00">2021-01-25</time></span><span class="level-item"><a class="link-muted" href="/categories/%E6%9D%8E%E5%AE%8F%E6%AF%85%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/">李宏毅机器学习课程</a></span><span class="level-item">3 minutes read (About 516 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/01/25/2020.1.25/">The foudation of Recurrent Neural Network</a></h1><div class="content"><p>Recurrent Neural Network是一种具有记忆能力的神经网络，主要用途在NLP上，句子中的单词意思依赖于前后句子，所以需要使用RNN这种带有记忆能力的神经网络模型。</p>
 <p><img src="https://raw.githubusercontent.com/eshoyuan/pic/main/image-20210125125335061.png"></p>
 <p>Bidirectional RNN是双向的RNN，普通的RNN句子中单词的意义只依赖于之前的单词，而如果使用Bidirectional RNN神经网络则具有看整个句子的能力。</p>
@@ -31,8 +33,12 @@
 </li>
 </ul>
 </div></article></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item">Posted&nbsp;<time dateTime="2021-01-22T16:00:00.000Z" title="2021/1/23上午12:00:00">2021-01-23</time></span><span class="level-item"><a class="link-muted" href="/categories/%E6%9D%8E%E5%AE%8F%E6%AF%85%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%E8%AF%BE%E7%A8%8B/">李宏毅机器学习课程</a></span><span class="level-item">4 minutes read (About 604 words)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2021/01/23/2021.1.23(1)/">The foundation of Convolutional Neural network</a></h1><div class="content"><p>CNN用在图像处理或类似方式表达的问题当中(比如棋盘)，一般性流程如下，</p>
-<p><img src="https://raw.githubusercontent.com/eshoyuan/pic/main/image-20210123223624454.png"></p>
-<h2 id="Convolution"><a href="#Convolution" class="headerlink" title="Convolution"></a>Convolution</h2><p>Convolution的本质是在一个图像中不断移动一个小框，然后看这个小框内是否存在一些特征。</p>
+<div style="align: center">
+![](https://raw.githubusercontent.com/eshoyuan/pic/main/image-20210123223624454.png)
+</div>
+## Convolution
+
+<p>Convolution的本质是在一个图像中不断移动一个小框，然后看这个小框内是否存在一些特征。</p>
 <p>自动学习出多个Filter，然后每个Filter原来图像的matrix中移动，计算内积得到新的matrix，最后得到一个多维的结果，过程如下，</p>
 <p><img src="https://raw.githubusercontent.com/eshoyuan/pic/main/image-20210123225237277.png"></p>
 <p>注：如果原图像有多个维度，则每个Filter也有同样的维度。</p>
